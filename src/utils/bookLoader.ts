@@ -98,6 +98,14 @@ export async function loadBook(): Promise<Book> {
             {
               path: "page_001.md",
               content: await import('../data/book/part3/chapter6/page_001.md?raw').then(m => m.default)
+            },
+          {
+          title: "Intellectual Property and the Training Data Dilemma",
+          path: "chapter7",
+          pages: [
+            {
+              path: "page_001.md",
+              content: await import('../data/book/part3/chapter7/page_001.md?raw').then(m => m.default)
             }
           ]
         }
