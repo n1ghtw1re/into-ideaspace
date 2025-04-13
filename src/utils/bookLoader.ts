@@ -151,7 +151,7 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "The Ethical and Social Implications**",
+      title: "The Ethical and Social Implications",
       path: "part4",
       chapters: [
         {
@@ -183,7 +183,7 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "Towards a New Paradigm**",
+      title: "Towards a New Paradigm",
       path: "part5",
       chapters: [
         {
