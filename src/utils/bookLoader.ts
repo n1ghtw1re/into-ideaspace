@@ -2,7 +2,7 @@ import { Book, Part, Chapter, Page } from '../types/book';
 
 export async function loadBook(): Promise<Book> {
   const book: Book = {
-    title: "The Codex Reader Guide",
+    title: "Into Ideaspace",
     author: "The N1ghtw1re Collective",
     parts: []
   };
@@ -14,7 +14,7 @@ export async function loadBook(): Promise<Book> {
       path: "introduction",
       chapters: [
         {
-          title: "Getting Started",
+          title: "Overview of Ideaspace ",
           path: "chapter1",
           pages: [
             {
@@ -26,11 +26,11 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "Reader Features",
+      title: "The Nature of Ideaspace**",
       path: "part1",
       chapters: [
         {
-          title: "Navigation and Layout",
+          title: "Understanding Ideaspace",
           path: "chapter1",
           pages: [
             {
@@ -40,7 +40,7 @@ export async function loadBook(): Promise<Book> {
           ]
         },
         {
-          title: "Responsive Design",
+          title: "Historical Perspectives on Shared Ideas",
           path: "chapter2",
           pages: [
             {
@@ -52,11 +52,11 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "Content Creation",
+      title: "Intellectual Property in the Modern World**",
       path: "part2",
       chapters: [
         {
-          title: "File Structure",
+          title: "Evolution of Intellectual Property Laws",
           path: "chapter3",
           pages: [
             {
@@ -66,7 +66,7 @@ export async function loadBook(): Promise<Book> {
           ]
         },
         {
-          title: "Markdown Support",
+          title: "The Corporate Monopoly on Ideas",
           path: "chapter4",
           pages: [
             {
@@ -78,11 +78,11 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "Customization",
+      title: "The AI Disruption**",
       path: "part3",
       chapters: [
         {
-          title: "Styling Guide",
+          title: "The Rise of Generative AI",
           path: "chapter5",
           pages: [
             {
@@ -92,7 +92,7 @@ export async function loadBook(): Promise<Book> {
           ]
         },
         {
-          title: "Theme Customization",
+          title: "Copyright in the Age of AI",
           path: "chapter6",
           pages: [
             {
