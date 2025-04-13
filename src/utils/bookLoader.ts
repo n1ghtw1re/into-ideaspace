@@ -19,7 +19,10 @@ export async function loadBook(): Promise<Book> {
           pages: [
             {
               path: "page_001.md",
-              content: await import('../data/book/introduction/chapter1/page_001.md?raw').then(m => m.default)
+              content: await import('../data/book/introduction/chapter1/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/introduction/chapter1/page_001.md');
+                return ''; // Or some other fallback content
+              })
             }
           ]
         }
@@ -35,7 +38,10 @@ export async function loadBook(): Promise<Book> {
           pages: [
             {
               path: "page_001.md",
-              content: await import('../data/book/part1/chapter1/page_001.md?raw').then(m => m.default)
+              content: await import('../data/book/part1/chapter1/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/part1/chapter1/page_001.md');
+                return '';
+              })
             }
           ]
         },
@@ -45,33 +51,10 @@ export async function loadBook(): Promise<Book> {
           pages: [
             {
               path: "page_001.md",
-              content: await import('../data/book/part1/chapter2/page_001.md?raw').then(m => m.default)
-            }
-          ]
-        }
-      ]
-    },
-    {
-      title: "Intellectual Property in the Modern World**",
-      path: "part2",
-      chapters: [
-        {
-          title: "Evolution of Intellectual Property Laws",
-          path: "chapter3",
-          pages: [
-            {
-              path: "page_001.md",
-              content: await import('../data/book/part2/chapter3/page_001.md?raw').then(m => m.default)
-            }
-          ]
-        },
-        {
-          title: "The Corporate Monopoly on Ideas",
-          path: "chapter4",
-          pages: [
-            {
-              path: "page_001.md",
-              content: await import('../data/book/part2/chapter4/page_001.md?raw').then(m => m.default)
+              content: await import('../data/book/part1/chapter2/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/part1/chapter2/page_001.md');
+                return '';
+              })
             }
           ]
         }
@@ -87,7 +70,10 @@ export async function loadBook(): Promise<Book> {
           pages: [
             {
               path: "page_001.md",
-              content: await import('../data/book/part3/chapter5/page_001.md?raw').then(m => m.default)
+              content: await import('../data/book/part3/chapter5/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/part3/chapter5/page_001.md');
+                return '';
+              })
             }
           ]
         },
@@ -97,8 +83,37 @@ export async function loadBook(): Promise<Book> {
           pages: [
             {
               path: "page_001.md",
-              content: await import('../data/book/part3/chapter6/page_001.md?raw').then(m => m.default)
-            },
+              content: await import('../data/book/part3/chapter6/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/part3/chapter6/page_001.md');
+                return '';
+              })
+            }
+          ]
+        },
+        {
+          title: "AI and Creative Collaboration",
+          path: "chapter7",
+          pages: [
+            {
+              path: "page_001.md",
+              content: await import('../data/book/part3/chapter7/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/part3/chapter7/page_001.md');
+                return '';
+              })
+            }
+          ]
+        },
+        {
+          title: "The Future of Intellectual Property",
+          path: "chapter8",
+          pages: [
+            {
+              path: "page_001.md",
+              content: await import('../data/book/part3/chapter8/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/part3/chapter8/page_001.md');
+                return '';
+              })
+            }
           ]
         }
       ]
@@ -109,27 +124,33 @@ export async function loadBook(): Promise<Book> {
       chapters: [
         {
           title: "Website Integration",
-          path: "chapter7",
+          path: "chapter9",
           pages: [
             {
               path: "page_001.md",
-              content: await import('../data/book/part4/chapter7/page_001.md?raw').then(m => m.default)
+              content: await import('../data/book/part4/chapter9/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/part4/chapter9/page_001.md');
+                return '';
+              })
             }
           ]
         },
         {
           title: "Advanced Configuration",
-          path: "chapter8",
+          path: "chapter10",
           pages: [
             {
               path: "page_001.md",
-              content: await import('../data/book/part4/chapter8/page_001.md?raw').then(m => m.default)
+              content: await import('../data/book/part4/chapter10/page_001.md?raw').then(m => m.default).catch(error => {
+                console.error("Error loading page:", '../data/book/part4/chapter10/page_001.md');
+                return '';
+              })
             }
           ]
         }
       ]
     }
-  ]
+  ];
 
   book.parts = parts;
   return book;
