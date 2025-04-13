@@ -29,7 +29,7 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "The Nature of Ideaspace**",
+      title: "The Nature of Ideaspace",
       path: "part1",
       chapters: [
         {
@@ -61,7 +61,7 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "Intellectual Property in the Modern World**",
+      title: "Intellectual Property in the Modern World",
       path: "part2",
       chapters: [
         {
@@ -93,7 +93,7 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "The AI Disruption**",
+      title: "The AI Disruption",
       path: "part3",
       chapters: [
         {
@@ -183,7 +183,7 @@ export async function loadBook(): Promise<Book> {
       ]
     },
     {
-      title: "owards a New Paradigm**",
+      title: "Towards a New Paradigm**",
       path: "part5",
       chapters: [
         {
