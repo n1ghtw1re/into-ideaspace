@@ -137,7 +137,7 @@ export async function loadBook(): Promise<Book> {
         }
       ]
     }
-  ];
+  ]}
 
   book.parts = parts;
   return book;
