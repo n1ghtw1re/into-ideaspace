@@ -45,7 +45,7 @@ N1ghtw1re Collective
 
 If you appreciate this work and the Codex Reader project, consider supporting the developer:
 
-* [Link to your preferred donation/support platform (e.g., Ko-fi, Patreon, etc.)]
+* [Patreon](https://www.patreon.com/c/N1GHTW1RE)
 
 ---
 
